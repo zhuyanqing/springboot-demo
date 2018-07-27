@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+/*头部*/
+.sTop { width:100%; height:100px; box-shadow:0 0 4px #ccc;}
+#top1 { height:78px; padding-top:22px; width:1190px; margin:0 auto;}
+.logistics-logo { width:170px; height:57px;}
+.logistics-nav { width:700px; height:50px; line-height:50px; margin-left:74px;}
+.logistics-nav ul { width:740px;}
+.logistics-nav ul li{ width:120px; height:50px; float:left; margin-right:20px;}
+.logistics-nav ul li.current a { color:#e80016}
+.logistics-nav ul li a{ width:120px; height:50px; text-align:center; display:block; font-size:18px;}
+.logistics-contect { width:245px; height:50px;}
+.l-qq { margin-top:-2px;}
+.l-qq p{ margin-bottom:5px;}
+.l-qq p span { font-weight:bold; font-size:12px;}
+.l-down { position:relative;}
+.l-down a.l-firstTit{ width:95px; padding-right:25px; background:url(../images/l_down.jpg) no-repeat 96px center;}
+.logistics-nav ul li.l-down div { display:none; width:118px; /*height:81px;*/ border:1px solid #dfdfdf; position:absolute; top:50px; left:0;}
+.logistics-nav ul li.l-down div ul li { height:27px; background:#fff; float:none; width:118px; margin:0;}
+.logistics-nav ul li.l-down div ul li a { width:118px; height:27px; line-height:27px; font-size:14px;}

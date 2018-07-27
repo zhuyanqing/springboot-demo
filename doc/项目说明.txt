@@ -1,0 +1,60 @@
+项目目录结构:
+
+├── Application.java
+├── domain
+│   ├── Address.java
+│   ├── Area.java
+│   ├── CarInfo.java
+│   ├── CarSource.java
+│   ├── Dict.java
+│   ├── GoodsInfo.java
+│   ├── GoodsSource.java
+│   ├── LogisticsBooking.java
+│   ├── LogisticsDeal.java
+│   ├── ProfileItem.java
+│   ├── Profile.java
+│   └── User.java
+├── service
+│   └── LogisticsService.java
+└── web
+    ├── SampleController.java
+    └── WelcomeController.java
+
+
+项目主要的框架为spring boot，在保证质量的前提下要求短平快。
+项目启动文件:[项目根目录]/src/main/java/com/wk/p3/logistics/Application.java
+直接main方法启动
+
+主要框架：
+1.前台静态页面使用　freemarker (暂时不能使用jsp),静态页面模板放在resources/templates目录
+2.前台ajax数据请求使用 @ResponseBody 注解返回数据
+3.前台使用的所有数据使用　LogisticsService.java　中提供的接口方法，一般情况下开发人员要通知项目负责人统一变更
+4.数据库操作使用spring data jpa
+
+目录介绍：
+1.domain为业务抽象出的模型,一般情况下不用变更
+2.service中为业务逻辑和数据连接层，需要开发人员完善实现
+3.web为ajax和web页面展示的controller，需要开发人员实现
+4.test目录为单元测试,主要的核心的方法必须写单元测试
+
+分工:
+1.使用美工开发的html转化为freemarker的模板文件(丽君前端页面开发，和后台数据交互，如有精力可以参与朱彦青angularJs的后台页面开发)
+2.后台使用基于angular的开源框架(朱彦青赵孟李峰负责后台开发和前后台数据交互，朱彦青同时负责后台管理页面)
+  demo地址：https://github.com/marmelab/ng-admin-demo
+3.4楼数据接口对接,后台管理的前端等(陈超)
+
+
+前台页面
+http://localhost:8080/front/template/index.html
+
+后台管理页面
+http://localhost:8080/admin/index.html
+
+
+
+
+
+
+
+
+
